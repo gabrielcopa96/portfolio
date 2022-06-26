@@ -43,10 +43,7 @@ const Resume = () => {
           </p>
           <div style={{ marginTop: "1.1rem" }}>
             <a
-              href={
-                "http://localhost:3000/src/components/Resume/GABRIELCOPA.pdf" ||
-                "https://gabrielcopa.vercel.app//src/components/Resume/GABRIELCOPA.pdf"
-              }
+              href="https://gabrielcopa.vercel.app//src/components/Resume/GABRIELCOPA.pdf"
               traget="_blank"
               download="cv-gabrielcopa"
               className={styles.btnDownload}
