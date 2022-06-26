@@ -45,7 +45,7 @@ const Resume = () => {
             <a
               href="https://gabrielcopa.vercel.app/src/components/Resume/GABRIELCOPA.pdf"
               traget="_blank"
-              download="cv-gabrielcopa"
+              download="cv-gabrielcopa.pdf"
               className={styles.btnDownload}
             >
               DESCARGAR CV
