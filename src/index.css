@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600;700&family=Kaushan+Script&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+:root {
+  --color-Principal: #45f9a2;
+  --color-Background: #020202;
+  --color-letras: #a5a5a5;
+}
+
+body {
+  background-color: var(--color-Background);
+}
+
+.sinscroll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: fixed;
+  padding-top: 1rem;
+  z-index: 1;
+}
+
+
+.scroll {
+  background-color: #414141a8;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
