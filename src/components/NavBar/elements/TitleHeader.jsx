@@ -5,47 +5,21 @@ const TitleIzquierdo = styled.h1`
   color: #fff;
   line-height: 90vh;
   margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  left: -14.5rem;
+  right: 5rem;
   text-align: center;
   font-size: 3.8rem;
   position: absolute;
   background: transparent;
   letter-spacing: 2.5px;
+
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+    right: 0;
+    left: -12.7rem;
+  }
 `;
 
-const glitch = keyframes`
-  0% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-  15% {
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
-  }
-  16% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-  49% {
-    text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-      -0.05em -0.05em 0 #fffc00;
-  }
-  50% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-  99% {
-    text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-      0 -0.04em 0 #fffc00;
-  }
-  100% {
-    text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
-      -0.04em -0.025em 0 #fffc00;
-  }
-`;
 
 const TitleDerecho = styled.span`
   color: var(--color-Principal);
@@ -56,22 +30,13 @@ const TitleDerecho = styled.span`
 
   span {
     position: absolute;
-    top: 0;
     left: 0;
     font-family: "Kaushan Script", cursive;
 
-    &:first-child {
-      animation: ${glitch} 500ms infinite;
-      clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
-      transform: translate(-0.4em, -0.03em);
-    }
-
-    &:last-child {
-      animation: ${glitch} 375ms infinite;
-      clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
-      transform: translate(0.04em, 0.03em);
-      opacity: 0.75;
-    }
+    @media (max-width: 900px) {
+    font-size: 2.5rem;
+    top: -21.2rem;
+  }
   }
 `;
 
@@ -79,11 +44,9 @@ const TitleHeader = () => {
   return (
     <>
       <TitleIzquierdo>
-        Full Stack{" "}
+        Full Stack
         <TitleDerecho>
-          <span aria-hidden="true">Developer</span>
-          Developer
-          <span aria-hidden="true"></span>
+          <span>Developer</span>
         </TitleDerecho>
       </TitleIzquierdo>
     </>

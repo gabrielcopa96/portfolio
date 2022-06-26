@@ -43,4 +43,11 @@ export const NavBarPortfolio = styled.nav`
       color: var(--color-Principal);
     }
   }
+
+  @media (max-width: 1000px) {
+    a { 
+      visibility: hidden;
+    }
+  }
+
 `;

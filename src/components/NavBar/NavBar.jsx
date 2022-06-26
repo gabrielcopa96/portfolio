@@ -38,10 +38,15 @@ const Active = styled.span`
     padding-left: 0.2rem;
     opacity: 1;
   }
+
+  @media (max-width: 1000px) {
+    opacity: 0;
+  }
 `;
 
 const NavBar = () => {
   const [active, setActive] = useState("home");
+  const [open, setOpen] = useState(false);
 
   const handleActive = (e) => {
     // e.preventDefault();
@@ -58,6 +63,17 @@ const NavBar = () => {
     }
   }
 
+  const handleOpen = (e) => {
+    e.preventDefault();
+
+    if(open) {
+      setOpen(false)
+    }
+    if(!open) {
+      setOpen(true)
+    }
+  }
+
   return (
     <LandingHeader id="home">
       <HeaderPortfolio id="nav">
@@ -70,7 +86,6 @@ const NavBar = () => {
               onClick={(e) => handleActive(e)}
               className={active === "home" ? styles.active : ""}
             >
-              {" "}
               Inicio
             </a>
           ) : (
@@ -78,7 +93,6 @@ const NavBar = () => {
           )}
           {active !== "project" ? (
             <a href="#projects" id="project" onClick={(e) => handleActive(e)}>
-              {" "}
               Proyectos
             </a>
           ) : (
@@ -86,7 +100,6 @@ const NavBar = () => {
           )}
           {active !== "resumecv" ? (
             <a href="#resume" id="resumecv" onClick={(e) => handleActive(e)}>
-              {" "}
               Resumen
             </a>
           ) : (
@@ -94,13 +107,27 @@ const NavBar = () => {
           )}
           {active !== "about" ? (
             <a href="#about" id="aboutus" onClick={(e) => handleActive(e)}>
-              {" "}
               Contacto
             </a>
           ) : (
             <Active>Contacto</Active>
           )}
+          {
+            !open
+            ? <MenuIcon className={styles.iconHambur} onClick={(e) => handleOpen(e)}/>
+            : <XIcon className={styles.iconHambur} onClick={(e) => handleOpen(e)}/>
+          }
         </NavBarPortfolio>
+        {
+            !open
+            ? <></>
+            : (<div className={styles.pruebaMenuMobile}>
+              <a href="#home">Inicio</a>
+              <a href="#project">Proyectos</a>
+              <a href="#resume">Resumen</a>
+              <a href="#about">Contacto</a>
+            </div>)
+          }
       </HeaderPortfolio>
       <TitleHeader />
       <ListSocialNetworks />

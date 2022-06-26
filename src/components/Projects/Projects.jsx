@@ -2,6 +2,23 @@ import React from "react";
 import CardsProjects from "./CardsProjects.jsx";
 import CardsProjectsPi from "./CardsProjectsPi.jsx";
 import Parallax from "react-rellax";
+import styled from "styled-components"
+
+const ContainerCardsProjects = styled.div`
+  width: 85%;
+  margin: 1rem auto;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 2.2rem;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 
 const Projects = () => {
   return (
@@ -18,15 +35,7 @@ const Projects = () => {
       >
         Proyectos
       </h1>
-      <div
-        style={{
-          width: "80%",
-          margin: "1rem auto",
-          display: "flex",
-          flexDirection: "column",
-          gap: "2.2rem",
-        }}
-      >
+      <ContainerCardsProjects>
         <Parallax speed={0}>
           <CardsProjects
             image="https://res.cloudinary.com/salta/image/upload/v1655856251/fittnet_n9egzn.jpg"
@@ -50,7 +59,7 @@ const Projects = () => {
           deploy="https://fastrecipes-pihenry-production.up.railway.app/"
           description="una SPA sobre recetas saludables, se consume una api externa para visualizar recetas, aquellas que sean creadas por medio del formulario son almacenadas en la base de datos. Por cada receta tiene un detalle profundo sobre sus pasos a seguir, tiempo de cocción, puntaje y una breve descripción"
         />
-      </div>
+      </ContainerCardsProjects>
     </div>
   );
 };

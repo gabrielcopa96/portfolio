@@ -10,6 +10,32 @@
   color: var(--color-Principal);
 }
 
+
+@media (max-width: 1000px) {
+  .iconHambur {
+    visibility: visible;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+
+.pruebaMenuMobile {
+  background: rgba(37, 37, 37, 0.562);
+  width: 100%;
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  text-align: center;
+  top: 5rem;
+  flex-direction: column;
+}
+
+.pruebaMenuMobile a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* .active {
   color: var(--color-Principal) !important;
 }

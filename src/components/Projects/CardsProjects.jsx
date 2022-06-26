@@ -1,6 +1,7 @@
 import React from "react";
 import { CardPrincipal, ContenidoCard } from "./styles/ProjectsStyles.jsx";
 import styled from "styled-components";
+import styles from "./styles/Projects.module.css";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiRedux,
@@ -15,6 +16,7 @@ import { IoEye } from "react-icons/io5";
 
 const ContainerTech = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1.2rem;
 `;
@@ -81,6 +83,16 @@ const ButtonDeploy = styled.a`
   }
 `;
 
+const ImageProjects = styled.img`
+  width: 120px;
+  height: 120px;
+
+  @media (max-width: 1300px) {
+    width: 100%;
+    height: 60%;
+  }
+`;
+
 const CardsProjects = (props) => {
   const { image, title, description, github, deploy } = props;
 
@@ -90,7 +102,11 @@ const CardsProjects = (props) => {
   };
   return (
     <CardPrincipal>
-      <img src={image} />
+      <div className={styles.imagenproject}>
+        <img
+          src={image}
+        />
+      </div>
       <ContenidoCard>
         <h2>{title}</h2>
         <p
