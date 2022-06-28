@@ -9,6 +9,10 @@ export const ContainerResume = styled.div`
         color: var(--color-Principal);
         text-align: center;
     }
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 `;
 
 export const CardResume = styled.div`
@@ -20,4 +24,12 @@ export const CardResume = styled.div`
     border-radius: .25rem;
     padding: 1rem;
     gap: 2rem;
+
+    @media (max-width: 900px) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
 `;

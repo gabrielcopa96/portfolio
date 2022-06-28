@@ -1,6 +1,7 @@
 import React from "react";
 import { ContainerResume, CardResume } from "./styles/ResumeStyles.jsx";
 import imagenPerfil from "../../assets/images/perfil-portfolio2.jpg";
+import cv from "./GABRIELCOPA.pdf";
 import styles from "./styles/resume.module.css";
 
 const Resume = () => {
@@ -9,7 +10,7 @@ const Resume = () => {
       <h1>Resumen</h1>
       <CardResume
         style={{
-          backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/497/410/non_2x/black-square-pattern-luxury-sofa-background-and-texture-vector.jpg')`,
+          // backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/497/410/non_2x/black-square-pattern-luxury-sofa-background-and-texture-vector.jpg')`,
         }}
       >
         <img
@@ -26,6 +27,9 @@ const Resume = () => {
           style={{
             color: "#e0e0e0",
             marginTop: "1.3rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             letterSpacing: ".8px",
           }}
         >
@@ -41,11 +45,11 @@ const Resume = () => {
             estar aprendiendo constantemente y que mejor que en el mundo IT
             donde todos los dias se aprende algo nuevo.
           </p>
-          <div style={{ marginTop: "1.1rem" }}>
+          <div style={{ marginTop: "2.2rem" }}>
             <a
-              href="https://gabrielcopa.vercel.app/src/components/Resume/GABRIELCOPA.pdf"
+              href={cv}
               traget="_blank"
-              download="cv-gabrielcopa.pdf"
+              download
               className={styles.btnDownload}
             >
               DESCARGAR CV

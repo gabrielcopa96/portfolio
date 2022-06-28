@@ -45,8 +45,12 @@ export const NavBarPortfolio = styled.nav`
   }
 
   @media (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    /* padding-top: 8rem; */
     a { 
-      visibility: hidden;
+      display: none;
+      /* visibility: hidden; */
     }
   }
 

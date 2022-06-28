@@ -40,3 +40,9 @@ body {
   position: fixed;
   z-index: 1;
 }
+
+@media (max-width: 900px) {
+  .scroll {
+    padding-top: 1rem;
+  }
+}
