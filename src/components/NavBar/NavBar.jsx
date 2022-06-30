@@ -97,14 +97,14 @@ const NavBar = () => {
           ) : (
             <Active>Proyectos</Active>
           )}
-          {
+          {/* {
             active !== "skills" ? (
               <a href="#skills" id="skill" onClick={(e) => handleActive(e)}>Habilidades</a>
             )
             : (
               <Active>Habilidades</Active>
             ) 
-          }
+          } */}
           {active !== "resumecv" ? (
             <a href="#resume" id="resumecv" onClick={(e) => handleActive(e)}>
               About
@@ -131,7 +131,7 @@ const NavBar = () => {
             : (<div className={styles.menuMobile}>
               <a href="#home">Inicio</a>
               <a href="#project">Proyectos</a>
-              <a href="#skills">Habilidades</a>
+              {/* <a href="#skills">Habilidades</a> */}
               <a href="#resume">Resumen</a>
               <a href="#about">Contacto</a>
             </div>)
