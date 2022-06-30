@@ -1,13 +1,13 @@
 import React from "react";
 import { ContainerResume, CardResume } from "./styles/ResumeStyles.jsx";
 import imagenPerfil from "../../assets/images/perfil-portfolio2.jpg";
-import cv from "./GABRIELCOPA.pdf";
+import cv from "./CV-2-GABRIEL-COPA.pdf";
 import styles from "./styles/resume.module.css";
 
 const Resume = () => {
   return (
     <ContainerResume id="resume">
-      <h1>Resumen</h1>
+      <h1>Acerca de mi</h1>
       <CardResume
         style={{
           // backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/497/410/non_2x/black-square-pattern-luxury-sofa-background-and-texture-vector.jpg')`,

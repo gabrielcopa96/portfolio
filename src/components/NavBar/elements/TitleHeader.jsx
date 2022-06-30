@@ -8,6 +8,7 @@ const TitleIzquierdo = styled.h1`
   left: -14.5rem;
   right: 5rem;
   text-align: center;
+  /* background-color: red; */
   font-size: 3.8rem;
   position: absolute;
   background: transparent;
@@ -17,6 +18,11 @@ const TitleIzquierdo = styled.h1`
     font-size: 2.5rem;
     right: 0;
     left: -12.7rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 1.8rem;
+    right: -1.1rem;
   }
 `;
 
@@ -36,6 +42,11 @@ const TitleDerecho = styled.span`
     @media (max-width: 900px) {
     font-size: 2.5rem;
     top: -21.2rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 2.2rem;
+    top: -14.4rem;
   }
   }
 `;

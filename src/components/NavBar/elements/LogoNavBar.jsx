@@ -4,6 +4,10 @@ import styled from "styled-components";
 const LogoPrincipal = styled.div`
   letter-spacing: 1.1px;
   margin-left: 5.5rem;
+
+  @media (max-width: 400px) {
+    margin-left: 1rem;
+  }
 `;
 
 const IzquierdaLogo = styled.h3`

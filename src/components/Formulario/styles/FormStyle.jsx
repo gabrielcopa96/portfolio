@@ -4,6 +4,13 @@ export const ContainerMainForm = styled.div`
     width: 85%;
     margin: 2rem auto;
     border-top: 1px solid var(--color-Principal);
+
+    h1 {
+        color: var(--color-Principal);
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
 `;
 
 
@@ -14,6 +21,10 @@ export const FormularioMain = styled.form`
     gap: 1.2rem;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 `;
 
 export const InputFormulario = styled.input`
@@ -22,6 +33,10 @@ export const InputFormulario = styled.input`
     padding: .4rem 1rem;
     color: #b1b1b1;
     border-radius: .8rem;
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 `;
 
 export const TextAreaFormulario = styled.textarea`
@@ -37,6 +52,13 @@ export const HeaderFormulario = styled.div`
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
+
+    @media (max-width: 400px) {
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+    }
 `;
 
 export const BtnEnviar = styled.button`

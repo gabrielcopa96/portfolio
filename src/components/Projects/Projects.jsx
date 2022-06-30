@@ -1,14 +1,11 @@
-import React from "react";
 import CardsProjects from "./CardsProjects.jsx";
 import CardsProjectsPi from "./CardsProjectsPi.jsx";
-import Parallax from "react-rellax";
 import styled from "styled-components"
 
 const ContainerCardsProjects = styled.div`
   width: 85%;
   margin: 1rem auto;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   gap: 2.2rem;
 
@@ -18,33 +15,38 @@ const ContainerCardsProjects = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 400px) {
+    max-width: 100%;
+  }
 `;
+
+const TitleProjects = styled.div`
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 7rem;
+
+  h1 {
+    color: var(--color-Principal);
+    text-align: center;
+    padding-bottom: .5rem;
+  }
+`;
+
+
 
 const Projects = () => {
   return (
-    <div
-      style={{ position: "relative", marginBottom: "2rem", marginTop: "7rem" }}
-      id="projects"
-    >
-      <h1
-        style={{
-          color: "var(--color-Principal)",
-          textAlign: "center",
-          paddingBottom: ".5rem",
-        }}
-      >
-        Proyectos
-      </h1>
+    <TitleProjects id="projects">
+      <h1>Proyectos</h1>
       <ContainerCardsProjects>
-        <Parallax speed={0}>
-          <CardsProjects
-            image="https://res.cloudinary.com/salta/image/upload/v1655856251/fittnet_n9egzn.jpg"
-            title="FittNet"
-            github="https://github.com/gabrielcopa96/PF-FittNet-G11-v1.2"
-            deploy="https://fittnet-g11.vercel.app/"
-            description="Aplicación Web, consiste en brindar soporte e información a usuarios y a dueños de gimnasios sobre la administración de palnes, gestión de personal y seguimiento de entrenamientos, gimnasios y entrenadores disponibles, así como la gestion de nuevos usuarios y sus pagos mensuales"
-          />
-        </Parallax>
+        <CardsProjects
+          image="https://res.cloudinary.com/salta/image/upload/v1655856251/fittnet_n9egzn.jpg"
+          title="FittNet"
+          github="https://github.com/gabrielcopa96/PF-FittNet-G11-v1.2"
+          deploy="https://fittnet-g11.vercel.app/"
+          description="Aplicación Web, consiste en brindar soporte e información a usuarios y a dueños de gimnasios sobre la administración de palnes, gestión de personal y seguimiento de entrenamientos, gimnasios y entrenadores disponibles, así como la gestion de nuevos usuarios y sus pagos mensuales"
+        />
         <CardsProjects
           image="https://res.cloudinary.com/salta/image/upload/v1655856212/7devsnft.jpg"
           title="7DevsNFT"
@@ -60,7 +62,7 @@ const Projects = () => {
           description="una SPA sobre recetas saludables, se consume una api externa para visualizar recetas, aquellas que sean creadas por medio del formulario son almacenadas en la base de datos. Por cada receta tiene un detalle profundo sobre sus pasos a seguir, tiempo de cocción, puntaje y una breve descripción"
         />
       </ContainerCardsProjects>
-    </div>
+    </TitleProjects>
   );
 };
 

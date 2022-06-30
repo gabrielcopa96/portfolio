@@ -23,6 +23,10 @@ export const CardPrincipal = styled.div`
     flex-direction: column;
     padding: 1rem;
   }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 export const ContenidoCard = styled.div`
@@ -36,5 +40,23 @@ export const ContenidoCard = styled.div`
     padding-bottom: 0.4rem;
     letter-spacing: 1.9px;
     border-bottom: 2px solid var(--color-Principal);
+  }
+
+  h4 {
+    color: var(--color-Principal);
+    margin-top: .6rem;
+  }
+
+  p {
+    color: #d5d5d5;
+    margin-top: 1rem;
+    width: 95%;
+    text-align: justify;
+    font-size: 1.1rem;
+
+    @media (max-width: 400px) {
+      width: 100%;
+      font-size: .98rem;
+    }
   }
 `;

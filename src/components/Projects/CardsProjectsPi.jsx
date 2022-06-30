@@ -1,6 +1,7 @@
 import React from "react";
 import { CardPrincipal, ContenidoCard } from "./styles/ProjectsStyles.jsx";
 import styled from "styled-components";
+import styles from "./styles/Projects.module.css";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiRedux,
@@ -17,6 +18,7 @@ import { IoEye } from "react-icons/io5";
 
 const ContainerTech = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1.2rem;
 `;
@@ -93,23 +95,13 @@ const CardsProjectsPi = (props) => {
   };
   return (
     <CardPrincipal>
-      <img src={image} />
+      <div className={styles.imagenproject}>
+        <img src={image} />
+      </div>
       <ContenidoCard>
         <h2>{title}</h2>
-        <p
-          style={{
-            color: "#d5d5d5",
-            marginTop: "1rem",
-            width: "95%",
-            textAlign: "justify",
-            fontSize: "1.1rem",
-          }}
-        >
-          {description}
-        </p>
-        <h4 style={{ color: "var(--color-Principal)", marginTop: ".6rem" }}>
-          Tecnologias utilizadas en el proyecto:{" "}
-        </h4>
+        <p>{description}</p>
+        <h4>Tecnologias utilizadas en el proyecto:</h4>
         <ContainerTech>
           <ContainerItemTech>
             <FaReact style={styleIconTech} />

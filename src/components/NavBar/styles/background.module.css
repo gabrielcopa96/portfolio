@@ -19,19 +19,24 @@
   }
 }
 
+@media (max-width: 400px) {
+  .iconHambur {
+    transition: .5s all;
+  }
+}
 
-.pruebaMenuMobile {
+.menuMobile {
   background: rgba(37, 37, 37, 0.562);
   width: 100%;
   display: flex;
   position: absolute;
   gap: 1rem;
   text-align: center;
-  top: 5rem;
+  top: 4.5rem;
   flex-direction: column;
 }
 
-.pruebaMenuMobile a {
+.menuMobile a {
   color: #fff;
   text-decoration: none;
 }

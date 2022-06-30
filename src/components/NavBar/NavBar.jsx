@@ -49,7 +49,6 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
 
   const handleActive = (e) => {
-    // e.preventDefault();
     setActive(e.target.id);
   };
 
@@ -104,14 +103,14 @@ const NavBar = () => {
             )
             : (
               <Active>Habilidades</Active>
-            )
+            ) 
           }
           {active !== "resumecv" ? (
             <a href="#resume" id="resumecv" onClick={(e) => handleActive(e)}>
-              Resumen
+              About
             </a>
           ) : (
-            <Active>Resumen</Active>
+            <Active>About</Active>
           )}
           {active !== "about" ? (
             <a href="#about" id="aboutus" onClick={(e) => handleActive(e)}>
@@ -129,7 +128,7 @@ const NavBar = () => {
         {
             !open
             ? <></>
-            : (<div className={styles.pruebaMenuMobile}>
+            : (<div className={styles.menuMobile}>
               <a href="#home">Inicio</a>
               <a href="#project">Proyectos</a>
               <a href="#skills">Habilidades</a>

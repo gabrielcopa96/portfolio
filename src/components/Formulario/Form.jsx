@@ -11,15 +11,7 @@ import {
 const Form = () => {
   return (
     <ContainerMainForm id="contacto">
-      <h1
-        style={{
-          color: "var(--color-Principal)",
-          textAlign: "center",
-          margin: "1.5rem auto",
-        }}
-      >
-        Contáctame
-      </h1>
+      <h1>Contáctame</h1>
       <FormularioMain
         target="_blank"
         action="https://formsubmit.co/gabrielcncopa@gmail.com"

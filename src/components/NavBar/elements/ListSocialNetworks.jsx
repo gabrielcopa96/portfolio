@@ -8,6 +8,10 @@ const ContainerMainSocialNetwork = styled.div`
   right: 6.5rem;
   bottom: 2rem;
   z-index: 1;
+
+  @media (max-width: 400px) {
+    right: 1.7rem;
+  }
 `;
 
 const ContainerListSocialNetwork = styled.div`
@@ -32,6 +36,10 @@ const TextFollowMe = styled.h3`
     height: 4.2rem;
     color: var(--color-letras);
     background-color: var(--color-letras);
+  }
+
+  @media (max-width: 400px) {
+    visibility: hidden;
   }
 `;
 const ListSocialNetworks = () => {

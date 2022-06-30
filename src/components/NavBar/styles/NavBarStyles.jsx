@@ -9,6 +9,10 @@ export const HeaderPortfolio = styled.div`
   position: fixed;
   padding-top: 1rem;
   z-index: 1;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
 `;
 
 export const NavBarPortfolio = styled.nav`
@@ -52,6 +56,12 @@ export const NavBarPortfolio = styled.nav`
       display: none;
       /* visibility: hidden; */
     }
+  }
+
+  @media (max-width: 400px) {
+    display: flex;
+    margin-right: 2rem;
+    justify-content: space-between;
   }
 
 `;

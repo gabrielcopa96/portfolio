@@ -83,13 +83,24 @@ const ButtonDeploy = styled.a`
   }
 `;
 
-const ImageProjects = styled.img`
-  width: 120px;
-  height: 120px;
+
+const ImagenProject = styled.div`
+  width: 100%;
+  height: 100%;
 
   @media (max-width: 1300px) {
-    width: 100%;
     height: 60%;
+  }
+
+  @media (max-width: 900px) {
+    height: 45%;
+  }
+
+  @media (max-width: 400px) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 `;
 
@@ -102,27 +113,23 @@ const CardsProjects = (props) => {
   };
   return (
     <CardPrincipal>
-      <div className={styles.imagenproject}>
-        <img
-          src={image}
-        />
-      </div>
+      <ImagenProject>
+        <img src={image} />
+      </ImagenProject>
       <ContenidoCard>
         <h2>{title}</h2>
         <p
-          style={{
-            color: "#d5d5d5",
-            marginTop: "1rem",
-            width: "95%",
-            textAlign: "justify",
-            fontSize: "1.1rem",
-          }}
+          // style={{
+          //   color: "#d5d5d5",
+          //   marginTop: "1rem",
+          //   width: "95%",
+          //   textAlign: "justify",
+          //   fontSize: "1.1rem",
+          // }}
         >
           {description}
         </p>
-        <h4 style={{ color: "var(--color-Principal)", marginTop: ".6rem" }}>
-          Tecnologias utilizadas en el proyecto:{" "}
-        </h4>
+        <h4>Tecnologias utilizadas en el proyecto:</h4>
         <ContainerTech>
           <ContainerItemTech>
             <FaReact style={styleIconTech} />
