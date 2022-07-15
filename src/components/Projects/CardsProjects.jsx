@@ -1,7 +1,6 @@
 import React from "react";
 import { CardPrincipal, ContenidoCard } from "./styles/ProjectsStyles.jsx";
 import styled from "styled-components";
-import styles from "./styles/Projects.module.css";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiRedux,
@@ -105,28 +104,20 @@ const ImagenProject = styled.div`
 `;
 
 const CardsProjects = (props) => {
-  const { image, title, description, github, deploy } = props;
+  const { image, title, description, github, deploy, theme } = props;
 
   const styleIconTech = {
     width: "29px",
     height: "29px",
   };
   return (
-    <CardPrincipal>
+    <CardPrincipal style={theme === "dark" ? {} : {backgroundColor: "#353535"}}>
       <ImagenProject>
         <img src={image} />
       </ImagenProject>
       <ContenidoCard>
         <h2>{title}</h2>
-        <p
-          // style={{
-          //   color: "#d5d5d5",
-          //   marginTop: "1rem",
-          //   width: "95%",
-          //   textAlign: "justify",
-          //   fontSize: "1.1rem",
-          // }}
-        >
+        <p>
           {description}
         </p>
         <h4>Tecnologias utilizadas en el proyecto:</h4>

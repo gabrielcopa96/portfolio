@@ -13,8 +13,12 @@
   --color-letras: #a5a5a5;
 }
 
-body {
+.body {
   background-color: var(--color-Background);
+}
+
+.body-white {
+  background-color: rgb(211, 211, 211);
 }
 
 .sinscroll {

@@ -42,7 +42,29 @@ const TextFollowMe = styled.h3`
     visibility: hidden;
   }
 `;
-const ListSocialNetworks = () => {
+
+const TextFollowMeWhite = styled.h3`
+  color: #000;
+  writing-mode: vertical-lr;
+  transform: rotate(360deg);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    bottom: -5.3rem;
+    right: 1rem;
+    height: 4.2rem;
+    color: #000;
+    background-color: #000;
+  }
+
+  @media (max-width: 400px) {
+    visibility: hidden;
+  }
+`
+const ListSocialNetworks = ({ theme }) => {
   return (
     <ContainerMainSocialNetwork>
       <ContainerListSocialNetwork>
@@ -54,17 +76,23 @@ const ListSocialNetworks = () => {
             gap: "1.7rem",
           }}
         >
-          <TextFollowMe>Follow me</TextFollowMe>
+          {
+            theme === "dark" ? (
+              <TextFollowMe>Follow me</TextFollowMe>
+            ) : (
+              <TextFollowMeWhite>Follow me</TextFollowMeWhite>
+            )
+          }
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem"}}>
           <a href="https://github.com/gabrielcopa96" target="_blank">
-            <FaGithub className={styles.icons} />
+            <FaGithub className={theme === "dark" ? styles.icons : styles.iconsWhite} />
           </a>
           <a
             href="https://www.linkedin.com/in/gabriel-copa-full-stack"
             target="_blank"
           >
-            <FaLinkedinIn className={styles.icons} />
+            <FaLinkedinIn className={theme === "dark" ? styles.icons : styles.iconsWhite} />
           </a>
         </div>
       </ContainerListSocialNetwork>

@@ -4,15 +4,11 @@ import imagenPerfil from "../../assets/images/perfil-portfolio2.jpg";
 import cv from "./CV-2-GABRIEL-COPA.pdf";
 import styles from "./styles/resume.module.css";
 
-const Resume = () => {
+const Resume = ( { theme }) => {
   return (
     <ContainerResume id="resume">
       <h1>Acerca de mi</h1>
-      <CardResume
-        style={{
-          // backgroundImage: `url('https://static.vecteezy.com/system/resources/previews/004/497/410/non_2x/black-square-pattern-luxury-sofa-background-and-texture-vector.jpg')`,
-        }}
-      >
+      <CardResume  style={theme === "dark" ? {} : {backgroundColor: "#353535"}}>
         <img
           src={imagenPerfil}
           alt="imagen-perfil"

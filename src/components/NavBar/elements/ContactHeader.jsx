@@ -13,8 +13,9 @@ const ContainerContactHeader = styled.div`
   z-index: 0;
 
 
-  @media (max-width: 400px) {
+  @media (max-width: 435px) {
     left: 1.32rem;
+    /* background-color: red; */
   }
 `;
 
@@ -34,21 +35,38 @@ const ContainerContactPrincipal = styled.div`
   }
 `;
 
+const ContainerContactPrincipalWhite = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  z-index: 0;
+
+  a {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-Principal);
+    }
+  }
+`;
+
 const Contenido = styled.div`
   display: flex;
   flex-direction: column;
   gap: .5rem;
 
-  @media (max-width: 400px) {
+  @media (max-width: 445px) {
     display: none;
   }
-  /* background-color: var(--color-Principal); */
 `;
 
-const ContactHeader = () => {
+const ContactHeader = ({ theme }) => {
   return (
     <ContainerContactHeader>
-      <ContainerContactPrincipal>
+      {
+        theme === "dark" ? (
+        <ContainerContactPrincipal>
         <p style={{ display: "flex", alignItems: "center", gap: ".3rem" }}>
           <FaRegEnvelope style={{ color: "var(--color-Principal)" }} />
           <a href="mailto:gabrielcncopa@gmail.com? subject=subject text"  style={{ marginLeft: ".3rem" }}>
@@ -61,8 +79,25 @@ const ContactHeader = () => {
             +54 (387) 6157 775
           </a>
         </p>
-      </ContainerContactPrincipal>
-      <Contenido>
+        </ContainerContactPrincipal>
+        ) : (
+          <ContainerContactPrincipalWhite>
+          <p style={{ display: "flex", alignItems: "center", gap: ".3rem" }}>
+            <FaRegEnvelope style={{ color: "var(--color-Principal)" }} />
+            <a href="mailto:gabrielcncopa@gmail.com? subject=subject text"  style={{ marginLeft: ".3rem" }}>
+              gabrielcncopa@gmail.com
+            </a>
+          </p>
+          <p style={{ display: "flex", alignItems: "center", gap: ".3rem" }}>
+            <FaWhatsapp style={{ color: "var(--color-Principal)" }} />
+            <a href="#" style={{ marginLeft: ".3rem" }}>
+              +54 (387) 6157 775
+            </a>
+          </p>
+          </ContainerContactPrincipalWhite>
+          )
+      }
+      <Contenido style={theme === "dark" ? {} : {color: "#000"}}>
         <h3>
           Hola, soy{" "}
           <span style={{ color: "var(--color-Principal)" }}>Gabriel Copa</span>,

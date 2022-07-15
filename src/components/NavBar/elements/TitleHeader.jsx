@@ -8,7 +8,6 @@ const TitleIzquierdo = styled.h1`
   left: -14.5rem;
   right: 5rem;
   text-align: center;
-  /* background-color: red; */
   font-size: 3.8rem;
   position: absolute;
   background: transparent;
@@ -51,10 +50,10 @@ const TitleDerecho = styled.span`
   }
 `;
 
-const TitleHeader = () => {
+const TitleHeader = ({ theme }) => {
   return (
     <>
-      <TitleIzquierdo>
+      <TitleIzquierdo style={theme === "dark" ? {} : {color: "#000"}}>
         Full Stack
         <TitleDerecho>
           <span>Developer</span>

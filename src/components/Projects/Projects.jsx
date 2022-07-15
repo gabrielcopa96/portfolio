@@ -35,7 +35,7 @@ const TitleProjects = styled.div`
 
 
 
-const Projects = () => {
+const Projects = ( { theme }) => {
   return (
     <TitleProjects id="projects">
       <h1>Proyectos</h1>
@@ -43,6 +43,7 @@ const Projects = () => {
         <CardsProjects
           image="https://res.cloudinary.com/salta/image/upload/v1655856251/fittnet_n9egzn.jpg"
           title="FittNet"
+          theme={theme}
           github="https://github.com/gabrielcopa96/PF-FittNet-G11-v1.2"
           deploy="https://fittnet-g11.vercel.app/"
           description="Aplicación Web, consiste en brindar soporte e información a usuarios y a dueños de gimnasios sobre la administración de palnes, gestión de personal y seguimiento de entrenamientos, gimnasios y entrenadores disponibles, así como la gestion de nuevos usuarios y sus pagos mensuales"
@@ -50,6 +51,7 @@ const Projects = () => {
         <CardsProjects
           image="https://res.cloudinary.com/salta/image/upload/v1655856212/7devsnft.jpg"
           title="7DevsNFT"
+          theme={theme}
           github="https://github.com/gabrielcopa96/Proyecto-Marketplace-NFT"
           deploy="https://7devsnft.netlify.app/"
           description="Aplicación Web, consiste en un Market de NFT. Los usuarios pueden registrarse y conectar una wallet de metamask, las compras solo se pueden hacer si tienes en tu navegador Metamask en el caso contrario la página no te va a dejar hacer ninguna compra ni crear un nft dentro de la pagina"
@@ -57,6 +59,7 @@ const Projects = () => {
         <CardsProjectsPi
           image="https://res.cloudinary.com/salta/image/upload/v1655856258/fastfoods_sg6ja6.jpg"
           title="FastRecipes"
+          theme={theme}
           github="https://github.com/gabrielcopa96/fastRecipes-PIHENRY"
           deploy="https://fastrecipes-pihenry-production.up.railway.app/"
           description="una SPA sobre recetas saludables, se consume una api externa para visualizar recetas, aquellas que sean creadas por medio del formulario son almacenadas en la base de datos. Por cada receta tiene un detalle profundo sobre sus pasos a seguir, tiempo de cocción, puntaje y una breve descripción"

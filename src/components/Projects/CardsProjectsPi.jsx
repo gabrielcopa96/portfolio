@@ -87,14 +87,14 @@ const ButtonDeploy = styled.a`
 `;
 
 const CardsProjectsPi = (props) => {
-  const { image, title, description, github, deploy } = props;
+  const { image, title, description, github, deploy, theme } = props;
 
   const styleIconTech = {
     width: "29px",
     height: "29px",
   };
   return (
-    <CardPrincipal>
+    <CardPrincipal style={theme === "dark" ? {} : {backgroundColor: "#353535"}}>
       <div className={styles.imagenproject}>
         <img src={image} />
       </div>

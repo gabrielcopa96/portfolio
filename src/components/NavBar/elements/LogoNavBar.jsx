@@ -22,10 +22,10 @@ const DerechaLogo = styled.span`
   font-family: "Kaushan Script", cursive;
 `;
 
-export const LogoNavBar = () => {
+export const LogoNavBar = ({ theme }) => {
   return (
     <LogoPrincipal>
-      <IzquierdaLogo>Gabriel <DerechaLogo>Copa</DerechaLogo>
+      <IzquierdaLogo style={theme === "dark" ? {} : {color: "#000"}}>Gabriel <DerechaLogo>Copa</DerechaLogo>
       </IzquierdaLogo>
     </LogoPrincipal>
   );

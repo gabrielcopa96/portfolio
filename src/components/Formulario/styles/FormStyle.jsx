@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContainerMainForm = styled.div`
     width: 85%;
+    padding-bottom: 2rem;
     margin: 2rem auto;
     border-top: 1px solid var(--color-Principal);
 
