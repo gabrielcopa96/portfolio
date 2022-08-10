@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { FaLocationArrow, FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 
@@ -15,7 +14,6 @@ const ContainerContactHeader = styled.div`
 
   @media (max-width: 435px) {
     left: 1.32rem;
-    /* background-color: red; */
   }
 `;
 

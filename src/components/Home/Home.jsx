@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../NavBar/NavBar.jsx';
 import Projects from '../Projects/Projects.jsx';
 import Resume from '../Resume/Resume.jsx';
-import Form from '../Formulario/Form.jsx';
+import Form from '../Form/Form.jsx';
 
 const Home = ({ theme, setTheme }) => {
   return (

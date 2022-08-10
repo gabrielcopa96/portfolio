@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import styled from "styled-components";
 import { HeaderPortfolio, NavBarPortfolio } from "./styles/NavBarStyles.jsx";
@@ -127,11 +127,11 @@ const NavBar = ({ theme, setTheme }) => {
             ? <MenuIcon className={styles.iconHambur} onClick={(e) => handleOpen(e)}/>
             : <XIcon className={styles.iconHambur} onClick={(e) => handleOpen(e)}/>
           }
-          <div className={theme === "dark" ? styles.switch : styles.switchWhite}>
+          {/* <div className={theme === "dark" ? styles.switch : styles.switchWhite}>
             <BsFillSunFill style={{width: "30px", height: "30px", padding: ".4rem", marginRight: ".4rem", marginLeft: ".7rem"}}/>
             <div className={`${styles.btnSwitchTheme} ${theme === "dark" ? styles.btn : styles.moveSwitch}`} onClick={switchTheme}></div>
             <BsFillMoonFill  style={{width: "30px", height: "30px", padding: ".4rem", marginRight: ".4rem", marginLeft: ".7rem"}}/>
-          </div>
+          </div> */}
         </NavBarPortfolio>
         {
             !open
