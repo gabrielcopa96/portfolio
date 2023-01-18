@@ -1,6 +1,6 @@
 import { useState, SetStateAction, Dispatch, ReactElement } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import Home from "./layouts/Home";
+import LayoutMain from "./layouts/LayoutMain";
 
 function App(): ReactElement<HTMLElement> {
 
@@ -9,7 +9,7 @@ function App(): ReactElement<HTMLElement> {
   return (
     <div className={theme === "light" ? "body-white" : "body"}>
       <BrowserRouter>
-        <Home theme={theme} setTheme={setTheme}/>
+        <LayoutMain theme={theme} setTheme={setTheme}/>
       </BrowserRouter>
     </div>
   );

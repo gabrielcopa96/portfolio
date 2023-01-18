@@ -1,10 +1,14 @@
 import Logo from "../Atomic/Logo/Logo";
+import ListTags from "../Molecules/ListTags/ListTags";
 
 const NavBar = () => {
- 
+
+  const tags = ["home", "about", "contact"]
+
   return (
-    <nav>
+    <nav className="navbar">
       <Logo />
+      <ListTags tags={tags} />
     </nav>
   );
 };
