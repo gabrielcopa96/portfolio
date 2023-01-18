@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState, SetStateAction, Dispatch, ReactElement } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import Home from "./components/Home/Home.jsx";
+import Home from "./layouts/Home";
 
-function App() {
+function App(): ReactElement<HTMLElement> {
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme]: [string, Dispatch<SetStateAction<string>>] = useState("dark");
 
   return (
     <div className={theme === "light" ? "body-white" : "body"}>
