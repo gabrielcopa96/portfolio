@@ -1,4 +1,5 @@
 import Logo from "../Atomic/Logo/Logo";
+import TitleHeader from "../Atomic/TitleHeader/TitleHeader";
 import ListTags from "../Molecules/ListTags/ListTags";
 
 const NavBar = () => {
