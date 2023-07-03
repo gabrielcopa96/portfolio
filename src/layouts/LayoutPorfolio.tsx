@@ -1,9 +1,10 @@
-import { JSXElementConstructor, ReactElement } from "react"
+import { type JSXElementConstructor, type ReactElement } from "react"
+import Home from "../pages/App/Home/Home"
 
 const LayoutPorfolio = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
    return (
-      <div>Este es mi porfolio</div>
+      <Home />
    )
 }
 
-export default LayoutPorfolio
+export default LayoutPorfolio;

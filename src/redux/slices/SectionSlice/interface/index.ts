@@ -5,5 +5,5 @@ enum section {
 
 export interface sectionSliceInterface {
    section: section;
-   path: "/" | "/admin";
+   path: "/portfolio" | "/admin";
 }

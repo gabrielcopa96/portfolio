@@ -1,15 +1,15 @@
-import { ReactElement, useEffect } from 'react';
-import { BrowserRouter, useLocation } from "react-router-dom";
-import LayoutMain from "./layouts/LayoutMain";
+import { ReactElement } from 'react';
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from 'react-redux'
 import store from './redux/store/store';
+import MainMiddleware from './middleware/MainMiddleware';
 
 function App(): ReactElement<HTMLElement> {
 
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <LayoutMain/>
+        <MainMiddleware/>
       </BrowserRouter>
     </Provider>
   );

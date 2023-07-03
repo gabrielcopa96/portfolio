@@ -3,7 +3,7 @@ import type { sectionSliceInterface } from './interface/index';
 
 const initialState = {
   section: 'portfolio',
-  path: '/'
+  path: '/portfolio'
 } as sectionSliceInterface
 
 export const sectionSlice = createSlice({
