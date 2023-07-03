@@ -1,17 +1,17 @@
-import { useState, SetStateAction, Dispatch, ReactElement } from 'react';
-import { BrowserRouter } from "react-router-dom";
+import { ReactElement, useEffect } from 'react';
+import { BrowserRouter, useLocation } from "react-router-dom";
 import LayoutMain from "./layouts/LayoutMain";
+import { Provider } from 'react-redux'
+import store from './redux/store/store';
 
 function App(): ReactElement<HTMLElement> {
 
-  const [theme, setTheme]: [string, Dispatch<SetStateAction<string>>] = useState("dark");
-
   return (
-    <div className={theme === "light" ? "body-white" : "body"}>
+    <Provider store={store}>
       <BrowserRouter>
-        <LayoutMain theme={theme} setTheme={setTheme}/>
+        <LayoutMain/>
       </BrowserRouter>
-    </div>
+    </Provider>
   );
 }
 
