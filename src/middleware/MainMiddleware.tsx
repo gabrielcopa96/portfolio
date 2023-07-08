@@ -23,10 +23,13 @@ const MainMiddleware = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
             navigate("/admin/home", { replace: true });
          })()
       }
-      if (location.pathname === "/portfolio") {
+
+      if ((location.pathname === "/" || location.pathname === "/portfolio") && location.search === "") {
          (async () => {
             dispatch(setSection("portfolio"));
-            navigate("/portfolio/home", { replace: true });
+            navigate("/portfolio?section=home", {
+               replace: true,
+            });
          })()
       }
    }, [])
@@ -41,9 +44,9 @@ const MainMiddleware = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
                </div>}
             />
          </Route>
-         <Route path={"/portfolio"} element={<PortfolioMiddleware />}>
+         <Route path={location.pathname === "/" ? "/" : "/portfolio"} element={<PortfolioMiddleware />}>
             <Route
-               path="/portfolio/home"
+               path="/portfolio"
                element={<LayoutPorfolio />}
             />
          </Route>
