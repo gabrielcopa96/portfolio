@@ -1,7 +1,8 @@
-import { useEffect, type JSXElementConstructor, type ReactElement } from "react"
+import { type JSXElementConstructor, type ReactElement } from "react"
 import Home from "../pages/App/Home/Home"
 import { useSearchParams } from "react-router-dom"
 import Contact from "../pages/App/Contacts/Contact";
+import NavBar from '../components/NavBar/NavBar';
 
 const LayoutPorfolio = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
 
@@ -9,6 +10,7 @@ const LayoutPorfolio = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
 
    return (
       <>
+         <NavBar />
          {
             searchParams.get("section") === "home" && <Home />
          }
