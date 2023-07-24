@@ -46,7 +46,7 @@ const Projects = ( { theme }) => {
           theme={theme}
           github="https://github.com/gabrielcopa96/PF-FittNet-G11-v1.2"
           deploy="https://fittnet-g11.vercel.app/"
-          description="Aplicación Web, consiste en brindar soporte e información a usuarios y a dueños de gimnasios sobre la administración de palnes, gestión de personal y seguimiento de entrenamientos, gimnasios y entrenadores disponibles, así como la gestion de nuevos usuarios y sus pagos mensuales"
+          description="Aplicación Web, consiste en brindar soporte e información a usuarios y a dueños de gimnasios sobre la administración de planes, gestión de personal y seguimiento de entrenamientos, gimnasios y entrenadores disponibles, así como la gestion de nuevos usuarios y sus pagos mensuales"
         />
         <CardsProjects
           image="https://res.cloudinary.com/salta/image/upload/v1655856212/7devsnft.jpg"

@@ -1,6 +1,6 @@
 import { ContainerResume, CardResume } from "./styles/ResumeStyles.jsx";
 import imagenPerfil from "../../assets/images/perfil-portfolio2.jpg";
-import cv from "./CV-2-GABRIEL-COPA.pdf";
+import cv from "./GABRIELCOPA.pdf";
 import styles from "./styles/resume.module.css";
 
 const Resume = ( { theme }) => {
