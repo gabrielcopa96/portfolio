@@ -23,7 +23,7 @@ const MainMiddleware = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
             navigate("/admin/home", { replace: true });
          })()
       }
-      if (location.pathname === "/portfolio") {
+      if (location.pathname === "/portfolio" || location.pathname === "/") {
          (async () => {
             dispatch(setSection("portfolio"));
             navigate("/portfolio/home", { replace: true });
