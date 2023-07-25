@@ -43,7 +43,7 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              Currently, I am focused on expanding my skills in backend development. To do so, I am studying Python with Django and Java. Although I have experience with Node.js and Express.js, I strongly believe in the importance of knowing different technologies to be able to make informed decisions and offer the best solutions for each project.</p>
+              Currently, I&apos;m focused on expanding my skills in backend development. To do so, I&apos;m studying Python with Django and Java. Although I have experience with Node.js and Express.js, I strongly believe in the importance of knowing different technologies to be able to make informed decisions and offer the best solutions for each project.</p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
@@ -51,7 +51,7 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I'm excited to keep growing as a professional and face new challenges. I'm always open to collaborate in interesting and challenging projects, thanks for visiting my portfolio and get to know a little more about me!🔗
+              I&apos;m excited to keep growing as a professional and face new challenges. I&apos;m always open to collaborate in interesting and challenging projects, thanks for visiting my portfolio and get to know a little more about me!🔗
             </p>
           </Reveal>
           <Reveal>

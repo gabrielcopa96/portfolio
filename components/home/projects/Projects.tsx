@@ -43,7 +43,7 @@ const projects: ProjectI[] = [
         </p>
         <p>
           The front end technology is based on React JS with Sass.
-          Application state management for the states that we consume from the api are cached using tanstack's reactquery technology.
+          Application state management for the states that we consume from the api are cached using tanstack&apos;s reactquery technology.
         </p>
         <p>
           The back end made with NodeJS/ExpressJS and mongodb as a database.

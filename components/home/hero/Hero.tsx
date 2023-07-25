@@ -23,7 +23,7 @@ export const Hero = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutCopy}>
-              Hi there! I'm Gabriel Copa, a Full Stack web developer with over 1 year of experience. Currently. I'm a self-learner and thrive in collaborative environments. Thanks for checking out my portfolio!
+              Hi there! I&apos;m Gabriel Copa, a Full Stack web developer with over 1 year of experience. Currently. I&apos;m a self-learner and thrive in collaborative environments. Thanks for checking out my portfolio!
             </p>
           </Reveal>
           <Reveal>
