@@ -12,7 +12,16 @@ export const Experience = () => {
   );
 };
 
-const experience = [
+interface ExperienceItemI {
+  title: string;
+  position: string;
+  time: string;
+  location: string;
+  description: string;
+  tech: string[];
+}
+
+const experience: ExperienceItemI[] = [
   {
     title: "Ontiime",
     position: "Junior Full Stack Developer",
