@@ -15,7 +15,7 @@ export const Experience = () => {
 const experience = [
   {
     title: "Ontiime",
-    position: "Mid-Level Full Stack Developer",
+    position: "Junior Full Stack Developer",
     time: "Oct 2022 - Jul 2023",
     location: "Remote, France Paris",
     description:
