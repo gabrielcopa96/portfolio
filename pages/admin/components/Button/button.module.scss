@@ -1,0 +1,97 @@
+.btn {
+    padding: 1rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+
+    &.primary {
+        background-color: var(--brand);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--brand-dark);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:active {
+            background-color: var(--brand-dark);
+            outline: 1px solid var(--border-active-btn);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:disabled {
+            background-color: var(--brand-light);
+            color: var(--grey);
+            cursor: not-allowed;
+            outline: none;
+        }
+    }
+
+    &.success {
+        background-color: var(--success);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--success-dark);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:active {
+            background-color: var(--success-dark);
+            outline: 1px solid var(--border-active-btn-success);
+            transition: background-color 0.1s ease-in-out;
+        }
+    }
+
+    &.warning {
+        background-color: var(--warning);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--warning-dark);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:active {
+            background-color: var(--warning-dark);
+            outline: 1px solid var(--border-active-btn-warning);
+            transition: background-color 0.1s ease-in-out;
+        }
+    }
+
+    &.danger {
+        background-color: var(--danger);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--danger-dark);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:active {
+            background-color: var(--danger-dark);
+            outline: 1px solid var(--border-active-btn-danger);
+            transition: background-color 0.1s ease-in-out;
+        }
+    }
+
+    &.info {
+        background-color: var(--info);
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--info-dark);
+            transition: background-color 0.1s ease-in-out;
+        }
+
+        &:active {
+            background-color: var(--info-dark);
+            outline: 1px solid var(--border-active-btn-info);
+            transition: background-color 0.1s ease-in-out;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

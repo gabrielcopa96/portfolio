@@ -1,0 +1,32 @@
+.logo_container {
+    display: flex;
+    align-items: center;
+
+    font-size: var(--text-sm);
+    font-weight: 900;
+}
+
+.logo {
+    cursor: pointer;
+    flex-shrink: 0;
+
+    font-size: var(--text-md);
+    font-weight: 900;
+    line-height: 1;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    span {
+        font-size: var(--text-md);
+        font-weight: 900;
+        line-height: 1;
+        color: var(--brand);
+    }
+}
