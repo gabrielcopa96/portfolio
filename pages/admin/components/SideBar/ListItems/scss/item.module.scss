@@ -1,0 +1,15 @@
+.item {
+    cursor: pointer;
+    padding: .45rem;
+
+    &:hover {
+        background-color: var(--brand);
+        transition: background-color 0.3s ease-in-out;
+        text-decoration: underline;
+    }
+
+    &.active {
+        background-color: var(--brand);
+        text-decoration: underline;
+    }
+}

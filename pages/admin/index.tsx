@@ -7,21 +7,29 @@ import InputText from './components/Input/InputText';
 import Select from './components/Select/Select';
 import SideBar from './components/SideBar/SideBar';
 import styles from "./admin.module.scss";
+import InputPassword from './components/InputPassword/InputPassword';
 
 const poppins = Poppins({ weight: ["100", "200", "400", "700", "900"] });
 
 const Admin = () => {
 
-    const [value, setValue] = useState("")
-
     return (
         <main
             className={styles.admin}
         >
-            <SideBar />
+            <div>
+                <p>InputPassword:</p>
+                <InputPassword />
+            </div>
+            {/* <div>
+                <br />
+                <p>InputText:</p>
+                <InputText placeholder="Nombre" />
+            </div> */}
+            {/* <SideBar />
             <div className={styles.prueba}>
                 <h3>Hola</h3>
-            </div>
+            </div> */}
         </main>
     )
 }
