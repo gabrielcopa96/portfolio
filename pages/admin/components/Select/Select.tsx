@@ -1,6 +1,7 @@
 import { useState, type JSXElementConstructor, type ReactElement, Children, cloneElement } from 'react';
 import styles from "./select.module.scss";
 import type { SelectI } from './interface/select.interface';
+import { motion } from "framer-motion"
 
 const Select = (props: SelectI): ReactElement<JSXElementConstructor<HTMLElement>> => {
 
@@ -13,7 +14,7 @@ const Select = (props: SelectI): ReactElement<JSXElementConstructor<HTMLElement>
       ...child.props,
       valueSelected: value ? value : "Seleccione una opcion",
       setValueOption: onChange,
-      setCloseOptions: setOpenSelect
+      setCloseOptions: setOpenSelect,
     }
     return cloneElement(child, newProps)
   }
@@ -29,15 +30,28 @@ const Select = (props: SelectI): ReactElement<JSXElementConstructor<HTMLElement>
   )
 }
 
-export const Options = (props: { options: Array<any>, valueSelected?: string; setValueOption?: any; setCloseOptions?: any }): ReactElement<JSXElementConstructor<HTMLElement>> => {
+export const Options = (props: { options: Array<any>, valueSelected?: string; setValueOption?: any; setCloseOptions?: any; }): ReactElement<JSXElementConstructor<HTMLElement>> => {
 
   const { options, valueSelected, setValueOption, setCloseOptions } = props
 
   return (
-    <div className={styles.options}>
+    <motion.div
+      className={styles.options}
+      initial={{
+        opacity: 0,
+        height: 0
+      }}
+      animate={{
+        opacity: 1,
+        height: "120px",
+        transition: {
+          duration: 0.2
+        }
+      }}
+    >
       {
         options.map((option, index) => (
-          <span
+          <motion.span
             key={index}
             className={`${styles.option} ${option === valueSelected && styles.optionSelected}`}
             onClick={() => {
@@ -46,10 +60,10 @@ export const Options = (props: { options: Array<any>, valueSelected?: string; se
             }}
           >
             {option}
-          </span>
+          </motion.span>
         ))
       }
-    </div>
+    </motion.div>
   )
 }
 
