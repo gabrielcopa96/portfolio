@@ -8,6 +8,7 @@ import Select from './components/Select/Select';
 import SideBar from './components/SideBar/SideBar';
 import styles from "./admin.module.scss";
 import InputPassword from './components/InputPassword/InputPassword';
+import InputEmail from './components/InputEmail/InputEmail';
 
 const poppins = Poppins({ weight: ["100", "200", "400", "700", "900"] });
 
@@ -17,9 +18,13 @@ const Admin = () => {
         <main
             className={styles.admin}
         >
-            <div>
+            {/* <div>
                 <p>InputPassword:</p>
                 <InputPassword />
+            </div> */}
+            <div>
+                <p>InputEmail</p>
+                <InputEmail />
             </div>
             {/* <div>
                 <br />

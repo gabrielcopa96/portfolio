@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { JSXElementConstructor, ReactElement } from 'react';
 import styles from "./inputemail.module.scss";
 
-const InputEmail = () => {
+const InputEmail = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
+
   return (
-    <div>InputEmail</div>
+    <input
+      className={styles.inputEmail}
+      type="email"
+      placeholder="Escriba email..."
+    />
   )
 }
 
