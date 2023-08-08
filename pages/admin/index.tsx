@@ -14,6 +14,8 @@ const poppins = Poppins({ weight: ["100", "200", "400", "700", "900"] });
 
 const Admin = () => {
 
+    const [valueEmail, setValueEmail] = useState<string>("");
+
     return (
         <main
             className={styles.admin}
@@ -24,7 +26,7 @@ const Admin = () => {
             </div> */}
             <div>
                 <p>InputEmail</p>
-                <InputEmail />
+                <InputEmail onChange={setValueEmail} value={valueEmail} />
             </div>
             {/* <div>
                 <br />
