@@ -41,10 +41,10 @@ export const About = () => {
               During my career, I have participated in several projects where I have had the opportunity to use a wide variety of technologies.
             </p>
           </Reveal>
-          <Reveal>
+          {/* <Reveal>
             <p className={styles.aboutText}>
               Currently, I&apos;m focused on expanding my skills in backend development. To do so, I&apos;m studying Python with Django and Java. Although I have experience with Node.js and Express.js, I strongly believe in the importance of knowing different technologies to be able to make informed decisions and offer the best solutions for each project.</p>
-          </Reveal>
+          </Reveal> */}
           <Reveal>
             <p className={styles.aboutText}>
               I stand out for my self-taught nature, as much of my learning has been based on daily practice and reading official documentation of the technologies I use.</p>
