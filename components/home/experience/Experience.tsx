@@ -23,26 +23,6 @@ interface ExperienceItemI {
 
 const experience: ExperienceItemI[] = [
   {
-    title: "Ontiime",
-    position: "Junior Full Stack Developer",
-    time: "Oct 2022 - Jul 2023",
-    location: "Remote, France Paris",
-    description:
-      "I helped from the beginning of the project, at the beginning I was doing back end and doing the corresponding deployment in aws, and then at the end of rest api I was part of the front end team..",
-    tech: [
-      "JavaScript",
-      "ReactJS",
-      "Rest API",
-      "Git",
-      "GitHub",
-      "Typscript",
-      "NodeJS/ExpressJS",
-      "Ably/Socket.io",
-      "Mongo",
-      "AWS"
-    ],
-  },
-  {
     title: "ACTotal",
     position: "Mid Full Stack Developer",
     time: "Oct 2023 - Actual",
@@ -64,6 +44,26 @@ const experience: ExperienceItemI[] = [
       "Sequelize",
       "PHP",
       "Wordpress",
+      "Mongo",
+      "AWS"
+    ],
+  },
+  {
+    title: "Ontiime",
+    position: "Junior Full Stack Developer",
+    time: "Oct 2022 - Jul 2023",
+    location: "Remote, France Paris",
+    description:
+      "I helped from the beginning of the project, at the beginning I was doing back end and doing the corresponding deployment in aws, and then at the end of rest api I was part of the front end team..",
+    tech: [
+      "JavaScript",
+      "ReactJS",
+      "Rest API",
+      "Git",
+      "GitHub",
+      "Typscript",
+      "NodeJS/ExpressJS",
+      "Ably/Socket.io",
       "Mongo",
       "AWS"
     ],
