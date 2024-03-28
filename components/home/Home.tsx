@@ -13,7 +13,8 @@ export const Home = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
     <>
       <div className={styles.home}>
         <SideBar />
-        <main id="main">
+        <h1>Bienvenido al portfolio v2</h1>
+        {/* <main id="main">
           <Heading />
           <Hero />
           <About />
@@ -27,7 +28,7 @@ export const Home = (): ReactElement<JSXElementConstructor<HTMLElement>> => {
                 "linear-gradient(180deg, var(--background), var(--background-dark))",
             }}
           />
-        </main>
+        </main> */}
       </div>
     </>
   );
