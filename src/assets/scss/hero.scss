@@ -1,0 +1,22 @@
+.container-hero {
+   width: 100vw;
+   height: 75vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footer-hero {
+   font-size: 1rem;
+   
+   & .container-descriptionhero {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .text-top-description {
+         font-weight: 500;
+      }
+   }
+}

@@ -1,0 +1,21 @@
+.logo {
+   margin-left: 1rem;
+   letter-spacing: 1.1px;
+   display: flex;
+   align-items: center;
+   gap: .45rem;
+}
+
+.logo-left {
+   color: #fff;
+   font-family: "Kaushan Script", cursive;
+   font-weight: 800;
+   font-size: 1.6rem;
+}
+
+.logo-right {
+   color: $color-Principal;
+   font-size: 1.85rem;
+   font-weight: 900;
+   font-family: "Kaushan Script", cursive;
+}

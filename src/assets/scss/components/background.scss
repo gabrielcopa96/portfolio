@@ -1,0 +1,42 @@
+.background {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+
+   & .background__title {
+      color: $color-background-letras;
+      margin-top: 10rem;
+      z-index: -1;
+
+      & h1 {
+         font-size:8.5rem;
+
+         &::before {
+            content: "";
+            position: absolute;
+            margin-top: 3.5rem;
+            right: 50%;
+            left: 50%;
+            top: 0;
+            width: 25px;
+            height: 15%;
+            background: $color-background-letras;
+            z-index: -1;
+         }
+
+         &::after {
+            content: "";
+            position: absolute;
+            margin-bottom: 5rem;
+            right: 50%;
+            left: 50%;
+            bottom: 0;
+            width: 25px;
+            height: 58%;
+            background: $color-background-letras;
+            z-index: -1;
+         }
+      }
+   }
+}
